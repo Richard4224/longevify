@@ -59,7 +59,6 @@ UI consistently labels estimates as rough and statistical.
   simulator with live score preview.
 - `QUELLEN.md` — sources, the weighting table, the years conversion model and its
   limitations (German).
-- `konzept.txt` — the original product concept notes (German).
 
 ## Design choices
 
