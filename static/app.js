@@ -498,7 +498,8 @@ function showResults() {
       '<a href="https://pubmed.ncbi.nlm.nih.gov/38065710/" target="_blank" rel="noopener">Million Veteran Program (2024)</a> und ' +
       '<a href="https://pubmed.ncbi.nlm.nih.gov/29712712/" target="_blank" rel="noopener">Harvard (Li et al. 2018)</a>.<br>' +
       'Kein medizinisches Instrument, kein Ersatz für ärztlichen Rat.' +
-    '</p>';
+    '</p>' +
+    '<button class="legal-link" data-open-legal>Impressum &amp; Datenschutz</button>';
 
   switchScreen(screenQuiz, screenResult);
 
@@ -579,3 +580,13 @@ document.getElementById('btn-logo').addEventListener('click', () => {
 
 btnBack.addEventListener('click', goBack);
 btnSkip.addEventListener('click', skipQuestion);
+
+// Legal overlay (delegated: trigger exists on start screen + result screen)
+const legalOverlay = document.getElementById('legal-overlay');
+document.addEventListener('click', e => {
+  if (e.target.closest('[data-open-legal]')) legalOverlay.hidden = false;
+  else if (e.target === legalOverlay || e.target.closest('#btn-legal-close')) legalOverlay.hidden = true;
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') legalOverlay.hidden = true;
+});

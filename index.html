@@ -17,6 +17,7 @@
         <p class="subtitle">13 Fragen. Kein Account. Kein Bullshit.</p>
         <button id="btn-start" class="btn-cta">Los geht's &rarr;</button>
         <p class="privacy-note">Alle Berechnungen laufen lokal in deinem Browser.<br>Keine Daten werden gespeichert oder übertragen.</p>
+        <button class="legal-link" data-open-legal>Impressum &amp; Datenschutz</button>
       </div>
     </section>
 
@@ -46,6 +47,32 @@
         <!-- rendered by JS -->
       </div>
     </section>
+
+    <div id="legal-overlay" class="legal-overlay" hidden>
+      <div class="legal-box">
+        <button id="btn-legal-close" class="legal-close" aria-label="Schließen">✕</button>
+
+        <h2>Impressum</h2>
+        <p>
+          Verantwortlich für diese Seite:<br><br>
+          Benedikt Brickwell<br>
+          E-Mail: brickwellbenedikt@gmail.com
+        </p>
+
+        <h2>Datenschutz</h2>
+        <p>
+          Diese Seite verarbeitet selbst keine personenbezogenen Daten: keine Cookies,
+          kein Tracking, keine Accounts. Deine Antworten im Quiz werden ausschließlich
+          lokal in deinem Browser verarbeitet und nirgendwohin übertragen oder gespeichert.
+        </p>
+        <p>
+          Beim Aufruf der Seite verarbeitet der Hosting-Anbieter GitHub Pages
+          (GitHub Inc., USA) technisch bedingt Server-Logdaten, darunter deine IP-Adresse.
+          Details dazu im
+          <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>.
+        </p>
+      </div>
+    </div>
 
   </div>
   <script src="static/app.js"></script>
