@@ -1,6 +1,12 @@
 'use strict';
 
 /*
+ * AI tool citation (per CS50 academic honesty policy):
+ * Developed with the assistance of Claude Code (Anthropic), models
+ * Claude Sonnet 4.6 and Claude Fable 5 — see index.html for details.
+ */
+
+/*
  * Fragen basieren auf den 8 Lebensstil-Faktoren des Million Veteran Program
  * (Nguyen et al. 2024, AJCN) sowie Li et al. 2018 (Circulation), Qian et al. 2023
  * (Schlaf), Holt-Lunstad et al. 2010 (Soziales), Ekelund et al. 2016 (Sitzzeit).
